@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familias</title>
+</head>
+<body>
+    
+    <h1>Familia</h1>
+
+    {%  for familia in familias  %}
+
+    <ul>
+        <li>
+            <b style="color: rgb(233, 161, 7);">Nombre</b>: {{ familia.nombre }}       |      <b style="color: rgb(233, 161, 7);">Apellido</b>: {{ familia.apellido }}
+        </li>
+        <li>
+            <b style="color: rgb(233, 161, 7);">Edad</b>: {{ familia.edad }}
+        </li>
+        <li>
+            <b style="color: rgb(233, 161, 7);">Nacimiento</b>: {{ familia.nacimiento}}
+        </li>
+        <li>
+            <b style="color: rgb(233, 161, 7);">Email</b>: {{ familia.email}}
+        </li>
+    </ul>
+    {%  endfor  %}
+</body>
+</html>
